@@ -1,0 +1,23 @@
+{
+  "name": "twitchbot_for_party_dad",
+  "description": "express with Babel",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "build": "yarn clean && babel 'src' --out-dir 'dist' --source-maps"
+  },
+  "engines": {
+    "node": "14.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3"
+  },
+  "private": true,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
